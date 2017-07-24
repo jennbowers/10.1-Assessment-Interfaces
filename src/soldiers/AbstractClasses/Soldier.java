@@ -1,3 +1,5 @@
+package soldiers.AbstractClasses;
+
 /**
  * Created by jenniferbowers on 7/24/17.
  */
