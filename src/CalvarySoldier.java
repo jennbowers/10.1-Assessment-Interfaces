@@ -1,12 +1,11 @@
-package soldiers.Classes;
-
-import soldiers.AbstractClasses.Soldier;
-import soldiers.Interfaces.HorsebackFighting;
-
 /**
  * Created by jenniferbowers on 7/24/17.
  */
-public class CalvarySoldier extends Soldier implements HorsebackFighting {
+public class CalvarySoldier extends Soldier implements HorsebackFighting, GunFighting {
+
+    public CalvarySoldier(String name, String rank, int serialNumber) {
+        super(name, rank, serialNumber);
+    }
 
     public String speak() {
         System.out.println("Giddyup!");
@@ -21,5 +20,10 @@ public class CalvarySoldier extends Soldier implements HorsebackFighting {
     public String kick() {
         System.out.println("kick");
         return "kick";
+    }
+
+    public String shoot() {
+        System.out.println("POW!");
+        return "POW!";
     }
 }
