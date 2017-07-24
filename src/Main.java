@@ -12,6 +12,10 @@ public class Main {
         newFootSoldier.speak();
         newFootSoldier.shoot();
 
+        Bomb newBombFighter = new Bomb("New Guy", "Bomber", 1234567);
+        newBombFighter.makeBomb();
+        System.out.println(newBombFighter.toString());
+
 
     }
 }

@@ -15,4 +15,5 @@ public class FootSoldier extends Soldier implements GunFighting{
         System.out.println("POW!");
         return "POW!";
     }
+
 }
